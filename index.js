@@ -6,8 +6,6 @@ const staticFolder = path.join(__dirname, "..", "react-frontend", "build");
 
 app.use("/", express.static(staticFolder));
 
-// Fallback
-
 app.get("/", function (req, res) {
   res.send("Fail to get front folder");
 });
