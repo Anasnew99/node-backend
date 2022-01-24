@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const path = require("path");
-const staticFolder = path.join(__dirname, "build");
+const staticFolder = path.join(__dirname, "..", "react-frontend", "build");
 
 app.use("/", express.static(staticFolder));
 
